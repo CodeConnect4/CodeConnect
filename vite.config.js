@@ -9,4 +9,5 @@ export default defineConfig({
     rollupOptions: {
       input: '/path/to/main.js',
     },
+  },
 })
