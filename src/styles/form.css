@@ -1,0 +1,115 @@
+body{
+    margin: 0; padding: 0;
+    background-color: var(--bgone);
+    box-sizing: content-box;
+    text-align: center;
+    font-family: 'Arial';
+    letter-spacing: 0.05em;
+     --bgone: rgb(42, 42, 43);
+    --bgtwo: rgb(57, 54, 70); 
+    --bgthree: #1c1c1c;
+    --bgfour: rgb(60, 64, 72);
+    --header:rgb(17, 17, 17);
+    --green:rgb(31, 162, 103);
+    --lightgreen:rgb(146, 227, 169);
+    --green2:rgb(106, 172, 143);
+    --white:rgb(209, 207, 211);
+    --pink:rgb(244,143,177);
+    --font1:'Bitter', serif;
+    --font2:'Cutive', serif;
+    --font3:'Expletus Sans', cursive;
+    --font4:'Merienda', cursive;
+    --font5:'Comic Neue';
+}
+/* FORM LOGIN */
+.mainform{
+    align-items: center; justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+form{  
+    margin-top: 5vh;
+    background: transparent;
+    padding: 3vw 3vw 3vw;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form h2{
+    color: #fff;
+    font-weight: 500;  
+    font-size: 2em;
+    font-family: var(--font5);
+    margin-bottom: 50px;
+  }
+  
+  .input-box{
+    position: relative;
+    width: 30vw;
+    margin-bottom: 40px;
+  }
+  
+  .input-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 0.5vh solid #999;
+    margin-bottom: 1vh;
+    outline : none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  
+  .input-box label{
+    font-size: 1.3em;
+    position: absolute;
+    left :0%;
+    text-align: left;
+    pointer-events: none;
+    color: #b1adad;
+    text-transform: uppercase; 
+  }
+  
+  .input-box label span{ 
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input-box input:focus ~label span,
+  .input-box input:valid ~label span{  
+    color: var(--green);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+  }
+  
+  .input-box input:focus,
+  .input-box input:valid{
+    border-bottom: 0.5vh solid var(--green);
+  }
+  
+  .input-box input[type="submit"]{
+    background: var(--green);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color:#1c2630;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .input-box input[type="submit"]:hover{
+    letter-spacing: 0.35em;
+  }
